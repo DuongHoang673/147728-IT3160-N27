@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TicTacToe:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f2a98312-026b-4448-91dc-4b6dfdefc0c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TicTacToe_jar/TicTacToe.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/Campaign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage1$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage2$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage3$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage4$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage5$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage6$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage6$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage7$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage7$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Campaign/CampaignStage7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Caro/ModChap1Nuoc2NguoiCaro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Caro/ModChap1NuocVSMayCaro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Caro/Play2PlayersCaro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Caro/PlayWithAiCaro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Connect4/ModChap1Nuoc2NguoiConnect4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Connect4/ModChap1NuocVSMayConnect4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Connect4/Play2PlayersConnect4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Connect4/PlayWithAiConnect4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/EasyBot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/GetAndSetHighScore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/HighScoreForm$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/HighScoreForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/JFrameMain$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/JFrameMain$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/JFrameMain$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/JFrameMain$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/JFrameMain$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/JFrameMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/ModChap1Nuoc2Nguoi$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/ModChap1Nuoc2Nguoi$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/ModChap1Nuoc2Nguoi$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/ModChap1Nuoc2Nguoi$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/ModChap1Nuoc2Nguoi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/ModChap1NuocVSMay$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/ModChap1NuocVSMay$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/ModChap1NuocVSMay$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/ModChap1NuocVSMay$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/ModChap1NuocVSMay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/Play2Players$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/Play2Players$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/Play2Players$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/Play2Players$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/Play2Players$DrawCanvas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/Play2Players$GameState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/Play2Players$Seed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/Play2Players.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/PlayWithAI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/PlayWithAI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/PlayWithAI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/PlayWithAI$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/PlayWithAI$Bot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/PlayWithAI$HeuristicBot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/TicTacToe/TicTacToe/PlayWithAI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Campaign/Campaign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Campaign/CampaignStage1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Campaign/CampaignStage2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Campaign/CampaignStage3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Campaign/CampaignStage4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Campaign/CampaignStage5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Campaign/CampaignStage6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Campaign/CampaignStage7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Caro/ModChap1Nuoc2NguoiCaro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Caro/ModChap1NuocVSMayCaro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Caro/Play2PlayersCaro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Caro/PlayWithAiCaro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Connect4/ModChap1Nuoc2NguoiConnect4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Connect4/ModChap1NuocVSMayConnect4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Connect4/Play2PlayersConnect4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Connect4/PlayWithAiConnect4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/EasyBot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/GetAndSetHighScore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/HighScoreForm.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/HighScoreForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/JFrameMain.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/JFrameMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/TicTacToe/ModChap1Nuoc2Nguoi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/TicTacToe/ModChap1NuocVSMay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/TicTacToe/Play2Players.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/TicTacToe/TicTacToe/PlayWithAI.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="1SpWXVObwIV9L3uMQbJModwlz8U" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.TicTacToe.Main" />
+      <module name="TicTacToe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.TicTacToe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2a98312-026b-4448-91dc-4b6dfdefc0c6" name="Default Changelist" comment="" />
+      <created>1572261056278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572261056278</updated>
+      <workItem from="1717865468026" duration="1875000" />
+      <workItem from="1718376449409" duration="3532000" />
+      <workItem from="1718380288520" duration="300000" />
+      <workItem from="1718381043401" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
