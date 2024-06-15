@@ -5,9 +5,6 @@ import com.TicTacToe.TicTacToe.Play2Players;
 import java.util.Random;
 
 public class EasyBot {
-
-
-
     public String getPosFrBrd(Play2Players.Seed[][] board){
         String vTri = new String();
         int pos1, pos2;

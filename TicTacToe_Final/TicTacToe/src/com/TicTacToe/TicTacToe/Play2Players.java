@@ -6,9 +6,6 @@ import javax.swing.*;
 
 import static com.TicTacToe.JFrameMain.jFrame;
 
-/**
- * Tic-Tac-Toe: Two-player Graphics version with Simple-OO
- */
 @SuppressWarnings("serial")
 public class Play2Players extends JFrame {
     public static int newRow =3;
@@ -57,7 +54,7 @@ public class Play2Players extends JFrame {
     protected Button btnBoDiLai;
 
 
-    /** Constructor to setup the game and the GUI components */
+    /** Constructor to set up the game and the GUI components */
     public Play2Players(String name1, String name2) {
         STEPS=0;
         PlayGame(name1,name2);
@@ -73,7 +70,6 @@ public class Play2Players extends JFrame {
         CELL_PADDING = CELL_SIZE / 6;
         SYMBOL_SIZE = CELL_SIZE - CELL_PADDING * 2;
     }
-
 
     protected void PlayGame(String name1, String name2){
         SetUpBoard(newRow);
@@ -113,7 +109,7 @@ public class Play2Players extends JFrame {
             }
         });
 
-        // Setup the status bar (JLabel) to display status message
+        // Set up the status bar (JLabel) to display status message
         statusBar = new JLabel("  ");
         statusBar.setFont(new Font(Font.DIALOG_INPUT, Font.BOLD, 15));
         statusBar.setBorder(BorderFactory.createEmptyBorder(2, 5, 4, 5));
@@ -253,9 +249,6 @@ public class Play2Players extends JFrame {
      *  Inner class DrawCanvas (extends JPanel) used for custom graphics drawing.
      */
     public class DrawCanvas extends JPanel {
-
-
-
         @Override
         public void paintComponent(Graphics g) {  // invoke via repaint()
             super.paintComponent(g);    // fill background
@@ -315,19 +308,6 @@ public class Play2Players extends JFrame {
         }
     }
 
-    public boolean CheckAdjacent(int x, int y){
-        if(x== rowPreSelected +1 && y== colPreSelected) return true;
-        if(x== rowPreSelected -1 && y== colPreSelected) return true;
-        if(x== rowPreSelected && y== colPreSelected +1) return true;
-        if(x== rowPreSelected && y== colPreSelected -1) return true;
-        if(x== rowPreSelected +1 && y== colPreSelected +1) return true;
-        if(x== rowPreSelected -1 && y== colPreSelected -1) return true;
-        if(x== rowPreSelected +1 && y== colPreSelected -1) return true;
-        if(x== rowPreSelected -1 && y== colPreSelected +1) return true;
-        //if(x>=3 || x<0 || y>=3 || y<0) return false;
-        return false;
-    }
-
     protected boolean CheckEmptyBoard(){
         for (int row = 0; row < ROWS; ++row) {
             for (int col = 0; col < COLS; ++col) {
@@ -338,7 +318,4 @@ public class Play2Players extends JFrame {
         }
         return true;
     }
-
-
-
 }

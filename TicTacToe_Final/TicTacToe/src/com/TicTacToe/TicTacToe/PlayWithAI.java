@@ -488,35 +488,4 @@ public class PlayWithAI extends Play2Players{
          return (mangPN[ta+1]*6)/4 - count;
       }
    }
-   // timeRun = số lần xuất hiện
-   public static void runFirst(Seed[][] board, int timeRun, Seed bot){
-      String vTri = new String();
-      List<String> list = new ArrayList<>();
-      Random rand = new Random();
-      int pos1, pos2;
-      do {
-         pos1 = rand.nextInt(COLS - 2) + 1;
-         pos2 = rand.nextInt(COLS - 2) + 1;
-      }
-      while (board[pos1][pos2] != Seed.EMPTY);
-      board[pos1][pos2] = bot;
-      list.add((pos1-1) + " " + (pos2 - 0));
-      list.add((pos1-1) + " " + (pos2 - 1));
-      list.add((pos1-1) + " " + (pos2 + 1));
-      list.add((pos1) + " " + (pos2 - 1));
-      list.add((pos1) + " " + (pos2 + 1));
-      list.add((pos1+1) + " " + (pos2 - 1));
-      list.add((pos1+1) + " " + (pos2));
-      list.add((pos1+1) + " " + (pos2 + 1));
-      for (int i = timeRun-1; i > 0; i--){
-         vTri = list.get(rand.nextInt(list.size()));
-         String[] splStr = vTri.split(" ");
-         int rowSelected = Integer.parseInt(splStr[0]);
-         int colSelected = Integer.parseInt(splStr[1]);
-         board[rowSelected][colSelected] = bot;
-         list.remove(vTri);
-      }
-
-   }
-
 }

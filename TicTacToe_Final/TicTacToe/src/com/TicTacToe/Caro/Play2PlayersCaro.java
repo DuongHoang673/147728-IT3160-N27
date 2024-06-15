@@ -3,13 +3,6 @@ package com.TicTacToe.Caro;
 import com.TicTacToe.TicTacToe.Play2Players;
 
 public class Play2PlayersCaro extends Play2Players {
-
-    /**
-     * Constructor to setup the game and the GUI components
-     *
-     * @param name1
-     * @param name2
-     */
     public Play2PlayersCaro(String name1, String name2) {
         super(name1, name2);
     }

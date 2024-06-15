@@ -4,12 +4,7 @@ import com.TicTacToe.TicTacToe.PlayWithAI;
 
 public class PlayWithAiCaro extends PlayWithAI {
 
-
-    /**
-     * Constructor to setup the game and the GUI components
-     *
-     * @param name
-     */
+    /** Constructor to setup the game and the GUI components*/
 
     public PlayWithAiCaro(String name) {
         super(name);
@@ -75,8 +70,4 @@ public class PlayWithAiCaro extends PlayWithAI {
         if(countOpDiaWin==4) return true;
         return false;
     }
-
-
-
-
 }
