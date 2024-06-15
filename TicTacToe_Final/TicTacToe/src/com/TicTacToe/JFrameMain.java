@@ -80,11 +80,8 @@ public class JFrameMain {
                             " giá trị từ 5 đến 20!!!");
                     return;
                 }
-
                 Play2PlayersCaro.newRow = row;
                 new Play2PlayersCaro(Player1Name,Player2Name);
-
-
                 jFrame.setVisible(false);
             }
         });

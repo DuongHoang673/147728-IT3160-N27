@@ -19,7 +19,6 @@ public class Play2Players extends JFrame {
     public static  int COLS = 3;
     public static String Player1Name;
     public static String Player2Name;
-    public static boolean Player1TwoMove;
     public static int STEPS=0;
 
     // Named-constants of the various dimensions used for graphics drawing
