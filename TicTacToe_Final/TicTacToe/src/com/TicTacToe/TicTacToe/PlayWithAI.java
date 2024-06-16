@@ -202,11 +202,8 @@ public class PlayWithAI extends Play2Players{
          bot = Bott;
          player = Playerr;
       }
-      // hàm test lấy ngẫu nhiên
-      // test với console
 
       // Main Clas, get Point when user check in board
-      // thay đổi cái int[][] board thành enum board
       public static String getPoint(Seed[][] board){
          long checkTC = 0;
          long checkPT = 0;
@@ -217,10 +214,9 @@ public class PlayWithAI extends Play2Players{
          for (int i = 0; i < dong; i++){
             for (int ii = 0; ii < cot; ii++)
             {
-
                if (board[i][ii] == Seed.EMPTY) {
-                  checkTC = CheckDoc(ii, i, board, bot) + CheckNgang(ii, i, board, bot) + CheckCheoPhai(i, ii, board, bot) + CheckCheoTrai(i, ii, board, bot);
-                  checkPT = PTDoc(ii, i, board, player) + PTNgang(ii, i, board, player) + PTPhai(i, ii, board, player) + PTTrai(i, ii, board, player);
+                  checkTC = CheckDoc(i, ii, board, bot) + CheckNgang(i, ii, board, bot) + CheckCheoPhai(i, ii, board, bot) + CheckCheoTrai(i, ii, board, bot);
+                  checkPT = PTDoc(i, ii, board, player) + PTNgang(i, ii, board, player) + PTPhai(i, ii, board, player) + PTTrai(i, ii, board, player);
                   long tmp = checkPT + checkTC;
                   if (tmp > max) {
                      list = new ArrayList<String>();
@@ -232,13 +228,8 @@ public class PlayWithAI extends Play2Players{
                      vTri = i + " " + ii;
                      list.add(vTri);
                   }
-
                }
-
-
             }
-
-
          }
          Random rand = new Random();
          String s = list.get(rand.nextInt(list.size()));
@@ -246,30 +237,29 @@ public class PlayWithAI extends Play2Players{
          return s;
       }
       //Tấn công
-      // -> -> -> -> -> -> [i][n++]
-      // int pos => vị trí hiện tại, int rowNow => dòng hiện tại
-      public static long CheckNgang(int pos, int rowNow, Seed[][] board, Seed type){
+      // int pos => vị trí cột hiện tại, int rowNow => dòng hiện tại
+      public static long CheckNgang(int rowNow, int pos, Seed[][] board, Seed type){
          int ta = 0; int count = 0; int dich = 0;
          boolean flag = false;
-         for (int i = pos+1; i < dong; i++){
-            if (board[rowNow][i] == type) ta++;
-            else if (board[rowNow][i] == Seed.EMPTY && flag == false){
+         for (int ii = pos+1; ii < cot; ii++){
+            if (board[rowNow][ii] == type) ta++;
+            else if (board[rowNow][ii] == Seed.EMPTY && flag == false){
                count++;
                flag = true;
                break;
             }
-            else if (board[rowNow][i] == player) {dich ++;break;}
+            else if (board[rowNow][ii] == player) {dich ++;break;}
             else {break;}
          }
          flag = false;
-         for (int i = pos-1; i >= 0; i--){
-            if (board[rowNow][i] == type) ta++;
-            else if (board[rowNow][i] == Seed.EMPTY && flag == false){
+         for (int ii = pos-1; ii >= 0; ii--){
+            if (board[rowNow][ii] == type) ta++;
+            else if (board[rowNow][ii] == Seed.EMPTY && flag == false){
                count++;
                flag = true;
                break;
             }
-            else if (board[rowNow][i] == player) {dich ++;break;}
+            else if (board[rowNow][ii] == player) {dich ++;break;}
             else {break;}
          }
          if (ta == 0) return 0;
@@ -280,10 +270,9 @@ public class PlayWithAI extends Play2Players{
          if (ta >= 4) return MAX_INT;
          return (mangTC[ta]*3)/2 - count*100;
       }
-      //^ ^ ^ ^ or | | | | [n++][i]
       // colNow => cột hiện tại, pos => vị trí dòng hiện tại
       // int type => enum type
-      public static long CheckDoc(int colNow, int pos, Seed[][] board, Seed type){
+      public static long CheckDoc(int pos, int colNow, Seed[][] board, Seed type){
          int ta = 0; int count = 0; int dich = 0;
          boolean flag = false;
          for (int i = pos+1; i < dong; i++){
@@ -311,14 +300,13 @@ public class PlayWithAI extends Play2Players{
          if (ta >= 4) return MAX_INT;
          return (mangTC[ta]*3)/2 - count*100;
       }
-      // \ \ \ \ \ \ [n++][n++]
-      //pos_col => dòng hiện tại, pos_row => cột hiện tại
-      public static long CheckCheoPhai(int pos_col, int pos_row, Seed[][] board, Seed type){
+      //pos_row => dòng hiện tại, pos_col => cột hiện tại
+      public static long CheckCheoPhai(int pos_row, int pos_col, Seed[][] board, Seed type){
          int ta = 0; int count = 0; int dich = 0;
          boolean flag = false;
-         int i = pos_col; int ii = pos_row;
+         int i = pos_row; int ii = pos_col;
          //check xuống
-         while (i+1< dong && ii+1 <dong){
+         while (i+1< dong && ii+1 <cot){
             if (board[i+1][ii+1] == type) ta++;
             else if (board[i+1][ii+1] == Seed.EMPTY && flag == false){
                count++;
@@ -330,7 +318,7 @@ public class PlayWithAI extends Play2Players{
             i = i + 1;
             ii = ii + 1;
          }
-         i = pos_col; ii = pos_row;
+         i = pos_row; ii = pos_col;
          flag = false;
          //check lên
          while (i-1 >= 0 && ii-1 >= 0){
@@ -353,11 +341,11 @@ public class PlayWithAI extends Play2Players{
          if (ta >= 4) return MAX_INT;
          return (mangTC[ta]*3) - count*100;
       }
-      // pos_col => dòng hiện tại, pos_row => cột hiện tại
-      public static long CheckCheoTrai(int pos_col, int pos_row, Seed[][] board, Seed type){
+      // pos_row => dòng hiện tại, pos_col => cột hiện tại
+      public static long CheckCheoTrai(int pos_row, int pos_col, Seed[][] board, Seed type){
          int ta = 0; int count = 0; int dich = 0;
          boolean flag = false;
-         int i = pos_col; int ii = pos_row;
+         int i = pos_row; int ii = pos_col;
          //check xuống
          while (i+1< dong && ii-1 >= 0){
             if (board[i+1][ii-1] == type) ta++;
@@ -372,9 +360,9 @@ public class PlayWithAI extends Play2Players{
             ii = ii - 1;
          }
          flag = false;
-         i = pos_col; ii = pos_row;
+         i = pos_row; ii = pos_col;
          //check lên
-         while (i-1 >= 0 && ii+1 < dong){
+         while (i-1 >= 0 && ii+1 < cot){
             if (board[i-1][ii+1] == type) ta++;
             else if (board[i-1][ii+1] == Seed.EMPTY && flag == false) {
                count++;
@@ -399,18 +387,18 @@ public class PlayWithAI extends Play2Players{
       // pos => cột hiện tại đang đứng -> di chuyển từ trái qua phải
       // rowNow => dòng hiện tại đang đứng
       // int type => enum type
-      public static long PTNgang(int pos, int rowNow, Seed[][] board, Seed type){
+      public static long PTNgang(int rowNow, int pos, Seed[][] board, Seed type){
          int ta = 0; int count = 1; int dich = 0;
-         for (int i = pos+1; i < dong; i++){
-            if (board[rowNow][i] == type) ta++;
-            else if (board[rowNow][i] == Seed.EMPTY) break;
-            else if (board[rowNow][i] == bot) {dich ++;break;}
+         for (int ii = pos+1; ii < cot; ii++){
+            if (board[rowNow][ii] == type) ta++;
+            else if (board[rowNow][ii] == Seed.EMPTY) break;
+            else if (board[rowNow][ii] == bot) {dich ++;break;}
             else {break;}
          }
-         for (int i = pos-1; i >= 0; i--){
-            if (board[rowNow][i] == type) ta++;
-            else if (board[rowNow][i] == Seed.EMPTY) break;
-            else if (board[rowNow][i] == bot) {dich ++;break;}
+         for (int ii = pos-1; ii >= 0; ii--){
+            if (board[rowNow][ii] == type) ta++;
+            else if (board[rowNow][ii] == Seed.EMPTY) break;
+            else if (board[rowNow][ii] == bot) {dich ++;break;}
             else {break;}
          }
          if (ta == 0) return 0;
@@ -419,7 +407,7 @@ public class PlayWithAI extends Play2Players{
          return (mangPN[ta+1]*6)/4 - count;
       }
       //^ ^ ^ ^ or | | | | [n++][i]
-      public static long PTDoc(int colNow, int pos, Seed[][] board, Seed type){
+      public static long PTDoc(int pos, int colNow, Seed[][] board, Seed type){
          int ta = 0; int count = 1; int dich = 0;
          for (int i = pos+1; i < dong; i++){
             if (board[i][colNow] == type) ta++;
@@ -439,18 +427,18 @@ public class PlayWithAI extends Play2Players{
          return (mangPN[ta+1]*6)/4 - count;
       }
       // \ \ \ \ \ \ [n++][n++]
-      public static long PTPhai(int pos_col, int pos_row, Seed[][] board, Seed type){
+      public static long PTPhai(int pos_row, int pos_col, Seed[][] board, Seed type){
          int ta = 0; int count = 1; int dich = 0;
-         int i = pos_col; int ii = pos_row;
+         int i = pos_row; int ii = pos_col;
          //check xuống
-         while (i+1< dong && ii+1 <dong){
+         while (i+1< dong && ii+1 <cot){
             if (board[i+1][ii+1] == type) ta++;
             else if (board[i+1][ii+1] == Seed.EMPTY)break;
             else {dich++;break;}
             i = i + 1;
             ii = ii + 1;
          }
-         i = pos_col; ii = pos_row;
+         i = pos_row; ii = pos_col;
          //check lên
          while (i-1 >= 0 && ii-1 >= 0){
             if (board[i-1][ii-1] == type) ta++;
@@ -463,9 +451,9 @@ public class PlayWithAI extends Play2Players{
          if (ta == 3 && (dich == 1 || dich == 0)) return MAX_INT/1000;
          return (mangPN[ta+1]*6)/4 - count;
       }
-      public static long PTTrai(int pos_col, int pos_row, Seed[][] board, Seed type){
+      public static long PTTrai(int pos_row, int pos_col, Seed[][] board, Seed type){
          int ta = 0; int count = 1;int dich=0;
-         int i = pos_col; int ii = pos_row;
+         int i = pos_row; int ii = pos_col;
          //check xuống
          while (i+1< dong && ii-1 >= 0){
             if (board[i+1][ii-1] == type) ta++;
@@ -474,9 +462,9 @@ public class PlayWithAI extends Play2Players{
             i = i + 1;
             ii = ii - 1;
          }
-         i = pos_col; ii = pos_row;
+         i = pos_row; ii = pos_col;
          //check lên
-         while (i-1 >= 0 && ii+1 < dong){
+         while (i-1 >= 0 && ii+1 < cot){
             if (board[i-1][ii+1] == type) ta++;
             else if (board[i-1][ii+1] == Seed.EMPTY) break;
             else {dich++;break;}
